@@ -1,0 +1,32 @@
+{
+  "name": "minimi-chat-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chat agent with deterministic temporal memory (SQLite) and a single web-search tool",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "seed": "tsx src/index.ts --seed-only",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.101",
+    "@ai-sdk/openai": "^4.0.113",
+    "ai": "^7.0.168",
+    "better-sqlite3": "^13.0.3",
+    "date-fns": "^4.4.0",
+    "dotenv": "^18.0.10",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
